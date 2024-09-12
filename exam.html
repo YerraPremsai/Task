@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Page</title>
+    <link rel="stylesheet" href="./exam.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Exam Mode Selection</h2>
+
+       
+        <div id="modeSelection">
+            <div class="essayMode">
+                <label>Select Your Mode:</label><br>
+                <input type="radio" id="easy" name="mode" value="easy"> Easy<br>
+                <input type="radio" id="moderate" name="mode" value="moderate"> Moderate<br>
+                <input type="radio" id="hard" name="mode" value="hard"> Hard<br>
+            </div>
+
+           
+            <div class="buttons">
+                <button id="proceedButton">Proceed</button>
+            </div>
+        </div>
+
+
+        <div id="essaySection" class="hidden">
+            <h2>Write your Essay</h2>
+
+            <div class="timer" id="timer">Time Remaining: <span id="time">00:00</span></div>
+            <div class="Question">
+                <label id="questionLabel">Essay Question:</label><br>
+                <p id="essayQuestion">Select a mode to display a question.</p>
+            </div>
+
+            
+
+            <div class="essayCount">
+                <textarea id="essay" placeholder="Start writing your essay..."></textarea>
+                <div class="word-count">
+                    Word count: <span id="wordCount">0</span> / <span id="maxWords">150</span>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="submitEssay">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./exam.js"></script>
+</body>
+</html>
